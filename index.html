@@ -89,12 +89,36 @@
             </div>
         </div>
         <div class="row align-items-center content">
+            <div class="col-md-6 text-center">
+                <div class="row justify-content-center">
+                    <div class="col-10 col-lg-8 blurb">
+                        <h2>MUESEUM OF CANDY</h2>
+                        <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
+                        <!--Below lg size, the image will disappear.-->
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore id maxime
+                            amet ea,
+                            in aut, quod, labore commodi quos blanditiis officiis laudantium ipsam qui? Enim iusto
+                            expedita
+                            omnis iste eius?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos veniam
+                            veritatis earum
+                            sit temporibus iste quasi! Architecto numquam consectetur deleniti. Perspiciatis,
+                            consectetur animi.
+                            Voluptatum recusandae minus facilis itaque! Exercitationem, eaque.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="imgs/gumball.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <div class="row align-items-center content">
             <div class="col-md-6 order-2 order-md-1">
-                <img src="imgs/milk.png" alt="" class="img-fluid">
+                <img src="imgs/sprinkles.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
                 <div class="row justify-content-center">
-                    <div class="col-10 col-lg-8 blurb">
+                    <div class="col-10 col-lg-8 blurb mb-5 mb-md-0">
+                        <!--mb-md-0 removes margin bottom 5, once screen size reaches medium size.-->
                         <h2>MUESEUM OF CANDY</h2>
                         <img src="imgs/lolli_icon.png" alt="" class="d-none d-lg-inline">
                         <!--Below lg size, the image will disappear.-->
@@ -124,6 +148,14 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
+        <script>
+            $(function () {
+                $(document).scroll(function(){
+                    var $nav = $("#mainNavbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        </script>
 </body>
 
 </html>
